@@ -50,6 +50,7 @@ h1{
     margin-top: 20px;
     padding: 20px;
     border-radius: 20px;
+    text-align: center;
 }
 .result{
     color: var(--silver-pink);
@@ -77,9 +78,27 @@ button{
     border-radius: 10px;
     min-width: 100px;
     min-height: 50px;
-    background-color: #CEB5B7;
+    background-color: var(--powder-blue);
     margin: 10px;
     margin-top: 20px;
     font-size: larger;
     color: #1E1E1E;
+    border-bottom: 5px solid #3D9970;
 }
+
+button:hover {
+    background-color: #9CF6F6;
+  }
+
+input {
+  height: 15px;
+  margin-top: 5px;
+  text-align: center;
+  text-indent: 5px;
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  width:300px;
+  border:none;
+  border-bottom:5px solid #3D9970;
+  }
+  input:focus 		{ outline:none; }
