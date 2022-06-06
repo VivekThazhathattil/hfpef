@@ -17,11 +17,20 @@
 		<main id="main" class="main">
 			<div class="sub-win">
 				<div class="form">
-					<label class="box" for="bmi" value="">BMI (kg/m2):</label><br>
+					<label class="box" for="bmi" value="">BMI (kg/m<sup>2</sup>):</label><br>
 					<input class="inbox" type="number" id="bmi" value="30" required><br>
 					<hr class="dashed">
-					<label class="box" for="atr_fibr">Atrial Fibrillation (Yes = 1, No = 0):</label><br>
-					<input class="inbox" type="number" id="atr_fibr" value="1" required><br>
+					<label class="box" for="atr_fibr">Atrial Fibrillation:</label><br>
+					<div class="radios">
+						<div>
+							<input type="radio" id="atrial_yes" name="atrial_fibr_radio" value="1">
+							<label id="label_radio_yes" for="atrial_yes">Yes</label><br>
+						</div>
+						<div>
+							<input type="radio" id="atrial_no" name="atrial_fibr_radio" value="0">
+							<label id="label_radio_no" for="atrial_no"> No</label><br>
+						</div>
+					</div>
 					<hr class="dashed">
 					<label class="box" for="sys_pres">Pulmonary artery systolic pressure (mmHg):</label><br>
 					<input class="inbox" type="number" id="sys_pres" value="21" required><br>
@@ -35,7 +44,7 @@
 					<button class="button" id="submit">Submit</button>
 				</div>
 				<div class="res">
-					<u><h3 class="result" id="hfpef-prob"></h3></u>
+					<h2 class="result" id="hfpef-prob"></h2>
 				</div>
 			</div>
 

@@ -90,7 +90,7 @@ button:hover {
     background-color: #9CF6F6;
   }
 
-input {
+.inbox {
   height: 15px;
   margin-top: 5px;
   text-align: center;
@@ -101,4 +101,17 @@ input {
   border:none;
   border-bottom:5px solid #3D9970;
   }
-  input:focus 		{ outline:none; }
+
+.inbox:focus 		{ outline:none; }
+
+.radios{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+input[type='radio']{
+		filter: hue-rotate(290deg);
+		transform: scale(2);
+		margin: 10px;
+}

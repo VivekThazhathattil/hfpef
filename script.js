@@ -1,7 +1,8 @@
 $(document).ready(function() {
     $("#submit").click(function(){
         var bmi = $("#bmi").val();
-        var atr_fibr = $("#atr_fibr").val();
+        /* var atr_fibr = $("#atr_fibr").val(); */
+				var atr_fibr = $('input[name=atrial_fibr_radio]:checked').val();
         var sys_pres = $("#sys_pres").val();
         var age = $("#age").val();
         var fill_pres = $("#fill_pres").val();
@@ -13,4 +14,10 @@ $(document).ready(function() {
         $("#hfpef-prob").text("HFpEF Probability = " + hfpef.toFixed(2) + "%");
         window.scrollTo(0, document.body.scrollHeight);
     });
+		$("#label_radio_yes").click(function(){
+			$("#atrial_yes").prop("checked", true);
+		});
+		$("#label_radio_no").click(function(){
+			$("#atrial_no").prop("checked", true);
+		});
 });
