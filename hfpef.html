@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HFpEF Probability Calculator</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body class="body">
+		<header>
+			<h1><u>HFpEF Probability Calculator</u></h1>
+		</header>
+		<main id="main" class="main">
+			<div class="sub-win">
+				<div class="form">
+					<label class="box" for="bmi" value="">BMI (kg/m2):</label><br>
+					<input class="inbox" type="number" id="bmi" value="30"><br>
+					<hr class="dashed">
+					<label class="box" for="atr_fibr">Atrial Fibrillation (Yes = 1, No = 0):</label><br>
+					<input class="inbox" type="number" id="atr_fibr" value="1"><br>
+					<hr class="dashed">
+					<label class="box" for="sys_pres">Pulmonary artery systolic pressure (mmHg):</label><br>
+					<input class="inbox" type="number" id="sys_pres" value="21"><br>
+					<hr class="dashed">
+					<label class="box" for="age">Age (in years):</label><br>
+					<input class="inbox" type="number" id="age" value="66"><br>
+					<hr class="dashed">
+					<label class="box" for="fill_pres">Filling pressure (E/e'):</label><br>
+					<input class="inbox" type="number" id="fill_pres" value="5"><br>
+					<hr class="dashed">
+					<button class="button" id="submit">Submit</button>
+				</div>
+				<div class="res">
+					<u><h3 class="result" id="log-odds"></h3></u>
+					<u><h3 class="result" id="odds"></h3></u>
+					<u><h3 class="result" id="hfpef-prob"></h3></u>
+				</div>
+			</div>
+
+		</main>
+	</body>
+</html>
